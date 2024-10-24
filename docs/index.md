@@ -4,22 +4,21 @@ layout: home
 
 hero:
   name: "Youenn Le Gouedec"
-  text: "Tutorials"
-  tagline: My great project tagline
+  text: "Laravel Tutorials"
+  tagline: My journey into Laravel and coding in general
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: Laravel tips
       link: /markdown-examples
-    - theme: alt
+    - theme: Vue tips
       text: API Examples
       link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Laravel
+    details: Laravel tips for real world projects
+  - title: Inertia + Vue
+    details: Make your app smooth and fast
+  - title: Deploy
+    details: VPS, Docker, Linux...
 ---
-
