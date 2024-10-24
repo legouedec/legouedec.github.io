@@ -20,10 +20,34 @@ export default defineConfig({
         ],
       },
       {
-        text: "Tutorials",
+        text: "Laravel",
         items: [
-          { text: "Laravels Tips", link: "/laravel-tips" },
-          { text: "Vue Tips", link: "/vue-tips" },
+          {
+            text: "Deployement",
+            items: [
+              {
+                text: "Deploy Laravel on LAMP",
+                link: "/laravel/deployement/deploy-laravel-on-lamp",
+              },
+            ],
+          },
+          {
+            text: "Tips",
+            items: [
+              { text: "Laravel Tips", link: "/laravel/tips/laravel-tips" },
+              {
+                text: "Reverb Websocket on LAMP",
+                link: "/laravel/tips/reverb-websocket-on-lamp",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        text: "Vue",
+        items: [
+          { text: "PrimeVue Tips", link: "/vue/primevue-tips" },
+          { text: "Vue Tips", link: "/vue/vue-tips" },
         ],
       },
     ],
