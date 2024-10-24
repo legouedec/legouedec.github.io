@@ -27,7 +27,7 @@ export default defineConfig({
             items: [
               {
                 text: "Deploy Laravel on LAMP",
-                link: "/laravel/deployement/deploy-laravel-on-lamp",
+                link: "/laravel/deployment/deploy-laravel-on-lamp",
               },
             ],
           },
