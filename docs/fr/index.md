@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "Youenn Le Gouedec"
+  name: "Le Gouedec"
   text: "Tutoriels Laravel"
   tagline: Tutoriels pour approfondir l'utilisation et le déploiement de Laravel
   actions:

@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "Youenn Le Gouedec"
+  name: "Le Gouedec"
   text: "Laravel Tutorials"
   tagline: Tutorials to deepen the use and deployment of Laravel
   actions:
