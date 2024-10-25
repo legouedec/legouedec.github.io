@@ -67,7 +67,7 @@ Mettez l'utilisateur dans le groupe `www-data`
 sudo usermod -aG www-data newuser
 ```
 
-Gérer les permissions sur le dossier `/var/www/html` où seront installés les sites :
+Gérez les permissions sur le dossier `/var/www/html` où seront installés les
 
 ```sh
 sudo chown -R $USER:www-data /var/www/html
