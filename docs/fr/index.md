@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Youenn Le Gouedec"
   text: "Tutoriels Laravel"
-  tagline: Mon parcours en Laravel et en developpement web
+  tagline: Tutoriels pour approfondir l'utilisation et le déploiement de Laravel
   actions:
     - theme: brand
       text: Laravel
