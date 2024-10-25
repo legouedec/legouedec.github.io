@@ -28,15 +28,18 @@ export default defineConfig({
         sidebar: [
           {
             text: "Laravel",
-            collapsed: true,
             items: [
               {
-                text: "Deployement",
+                text: "Deployment",
                 collapsed: true,
                 items: [
                   {
                     text: "Deploy Laravel on LAMP",
                     link: "/laravel/deployment/deploy-laravel-on-lamp",
+                  },
+                  {
+                    text: "Deploy on push with Github Webhooks",
+                    link: "/laravel/deployment/deploy-on-push-with-github-webhooks",
                   },
                 ],
               },
@@ -54,8 +57,17 @@ export default defineConfig({
             ],
           },
           {
+            text: "Server",
+            items: [
+              {
+                text: "Install PhpMyAdmin",
+                link: "/server/install-phpmyadmin.md",
+              },
+              { text: "Run Supervisors", link: "/server/run-supervisors.md" },
+            ],
+          },
+          {
             text: "Vue",
-            collapsed: true,
             items: [
               { text: "PrimeVue Tips", link: "/vue/primevue-tips" },
               { text: "Vue Tips", link: "/vue/vue-tips" },
@@ -64,7 +76,10 @@ export default defineConfig({
         ],
 
         socialLinks: [
-          { icon: "github", link: "https://github.com/vuejs/vitepress" },
+          {
+            icon: "github",
+            link: "https://github.com/legouedec/legouedec.github.io",
+          },
         ],
       },
     },
@@ -102,14 +117,18 @@ export default defineConfig({
         sidebar: [
           {
             text: "Laravel",
-            collapsed: true,
             items: [
               {
                 text: "Deploiement",
+                collapsed: true,
                 items: [
                   {
-                    text: "Déployer Laravel sur LAMP",
+                    text: "Deployer Laravel sur LAMP",
                     link: "/fr/laravel/deployment/deploy-laravel-on-lamp",
+                  },
+                  {
+                    text: "Deployer automatiquement au push avec Github Webhooks",
+                    link: "/fr/laravel/deployment/deploy-on-push-with-github-webhooks",
                   },
                 ],
               },
@@ -117,7 +136,10 @@ export default defineConfig({
                 text: "Conseils",
                 collapsed: true,
                 items: [
-                  { text: "Laravel Tips", link: "/laravel/tips/laravel-tips" },
+                  {
+                    text: "Conseils Laravel",
+                    link: "/fr/laravel/tips/laravel-tips",
+                  },
                   {
                     text: "Reverb Websocket sur LAMP",
                     link: "/fr/laravel/tips/reverb-websocket-on-lamp",
@@ -127,8 +149,20 @@ export default defineConfig({
             ],
           },
           {
+            text: "Serveur",
+            items: [
+              {
+                text: "Installer PhpMyAdmin",
+                link: "/fr/server/install-phpmyadmin.md",
+              },
+              {
+                text: "Executer des Supervisors",
+                link: "/fr/server/run-supervisors.md",
+              },
+            ],
+          },
+          {
             text: "Vue",
-            collapsed: true,
             items: [
               { text: "Conseils PrimeVue", link: "/fr/vue/primevue-tips" },
               { text: "Conseils Vue", link: "/fr/vue/vue-tips" },
@@ -137,7 +171,10 @@ export default defineConfig({
         ],
 
         socialLinks: [
-          { icon: "github", link: "https://github.com/vuejs/vitepress" },
+          {
+            icon: "github",
+            link: "https://github.com/legouedec/legouedec.github.io",
+          },
         ],
       }, // optional, will be added  as `lang` attribute on `html` tag
     },
