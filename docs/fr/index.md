@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "Youenn Le Gouedec"
-  text: "Laravel Tutorials"
-  tagline: My journey into Laravel and coding in general
+  text: "Tutoriels Laravel"
+  tagline: Mon parcours en Laravel et en developpement web
   actions:
     - theme: brand
       text: Laravel
@@ -16,9 +16,9 @@ hero:
 
 features:
   - title: Laravel
-    details: Laravel tips for real world projects
+    details: Conseils pour des vrais projets Laravel
   - title: Inertia + Vue
-    details: Make your app smooth and fast
+    details: Rendez votre application fluide et rapide
   - title: Serveur
     details: VPS, Docker, Linux...
 ---
