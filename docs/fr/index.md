@@ -9,10 +9,10 @@ hero:
   actions:
     - theme: brand
       text: Laravel
-      link: /laravel/tips/laravel-tips
+      link: /fr/laravel/tips/laravel-tips
     - theme: alt
       text: Vue
-      link: /vue/vue-tips
+      link: /fr/vue/vue-tips
 
 features:
   - title: Laravel
