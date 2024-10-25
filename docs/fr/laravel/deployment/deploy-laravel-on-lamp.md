@@ -12,13 +12,13 @@ outline: deep
 
 Avant de commencer, assurez vous que votre domaine example.com pointe vers le serveur (Balise A dans la zone DNS).
 
-Connectez-vous en SSH au serveur soit grace au mot de passe choisi pendent la configuration du droplet, soit grâce à une paire de clé SSH dont vous aurez fourni la clé publique pendant la configuration.
+Connectez-vous en SSH au serveur soit grace au mot de passe choisi pendant la configuration du droplet, soit grâce à une paire de clé SSH dont vous aurez fourni la clé publique pendant la configuration.
 
 ```sh
 ssh root@ip_du_droplet
 ```
 
-### Creez un utilisateur et lui donner les droits sudo
+### Creez un utilisateur et donnez lui les droits sudo
 
 ```sh
 adduser newuser
@@ -30,7 +30,7 @@ usermod -aG sudo newuser
 ::: tip Passez cette étape si votre serveur a au moins 1Go de ram
 :::
 
-Si vous avez pris un droplet avec peu de Ram (512Mo), l'installation de mysql-serveur risque de planter, dans ce cas, je vous invite à ajouter de la mémoire SWAP en suivant ce [tutoriel](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-22-04){target="blank"} dont voisci un résumé :
+Si vous avez pris un droplet avec peu de Ram (512Mo), l'installation de mysql-server risque de planter, dans ce cas, je vous invite à ajouter de la mémoire SWAP en suivant ce [tutoriel](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-22-04){target="blank"} dont voici un résumé :
 
 ```sh
 su newuser
@@ -109,7 +109,7 @@ sudo mysql_secure_installation
 sudo mysql -p
 ```
 
-Créez un nouvel utilisateur MySQL
+Créez une base de données et un nouvel utilisateur MySQL
 
 ```sql
 CREATE DATABASE example_database;
@@ -145,7 +145,7 @@ nano .env
 
 ::: code-group
 
-```txt[/var/www/html/example.conf]
+```txt[/var/www/html/example/.env]
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -168,7 +168,7 @@ sudo nano /etc/apache2/sites-available/example.conf
 <VirtualHost \*:80>
     ServerName your-custom-domain
     ServerAlias www.your-custom-domain
-    DocumentRoot /var/www/example
+    DocumentRoot /var/www/html/example
     <Directory /var/www/html/example>
         AllowOverride all
     </Directory>
