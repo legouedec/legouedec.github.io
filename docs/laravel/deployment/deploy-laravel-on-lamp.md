@@ -146,7 +146,7 @@ nano .env
 
 ::: code-group
 
-```txt[/var/www/html/example.conf]
+```txt[/var/www/html/example/.env]
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -169,7 +169,7 @@ sudo nano /etc/apache2/sites-available/example.conf
 <VirtualHost *:80>
     ServerName your-custom-domain
     ServerAlias www.your-custom-domain
-    DocumentRoot /var/www/example
+    DocumentRoot /var/www/html/example
     <Directory /var/www/html/example>
         AllowOverride all
     </Directory>
