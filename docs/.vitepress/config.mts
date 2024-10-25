@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Youenn Le Gouedec",
+  title: "YLG",
   description: "Tutorials",
   lastUpdated: true,
 
