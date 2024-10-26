@@ -219,4 +219,4 @@ sudo certbot --apache
 systemctl reload apache2
 ```
 
-Bravo, votre site est maintenant accessible à l'adresse example.com!
+Bravo, votre site est maintenant accessible à l'adresse example.com
