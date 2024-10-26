@@ -19,6 +19,6 @@ features:
     details: Laravel tips for real world projects
   - title: Inertia + Vue
     details: Make your app smooth and fast
-  - title: Serveur
+  - title: Server
     details: VPS, Docker, Linux...
 ---

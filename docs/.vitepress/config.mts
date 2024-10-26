@@ -2,7 +2,6 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "YLG",
   description: "Tutorials",
   lastUpdated: true,
 
@@ -11,8 +10,10 @@ export default defineConfig({
       label: "English",
       lang: "en",
       themeConfig: {
+        siteTitle: false,
+        logo: "/logo.svg",
         // https://vitepress.dev/reference/default-theme-config
-        nav: [{ text: "Home", link: "/" }],
+        // nav: [{ text: "Home", link: "/" }],
         editLink: {
           pattern:
             "https://github.com/legouedec/legouedec.github.io/main/docs/:path",
@@ -87,8 +88,9 @@ export default defineConfig({
       label: "Français",
       lang: "fr",
       themeConfig: {
-        // https://vitepress.dev/reference/default-theme-config
-        nav: [{ text: "Accueil", link: "/" }],
+        siteTitle: false,
+        logo: "/logo.svg",
+        // nav: [{ text: "Accueil", link: "/" }],
         lastUpdated: {
           text: "Actualisé le",
           formatOptions: {
