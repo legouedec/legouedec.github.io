@@ -49,12 +49,18 @@ export default defineConfig({
                 collapsed: true,
                 items: [
                   {
-                    text: "Laravel Tips",
-                    link: "/laravel/websocket/laravel-tips",
-                  },
-                  {
                     text: "Reverb Websocket on LAMP",
                     link: "/laravel/websocket/reverb-websocket-on-lamp",
+                  },
+                ],
+              },
+              {
+                text: "Tips",
+                collapsed: true,
+                items: [
+                  {
+                    text: "Laravel Tips",
+                    link: "/laravel/tips/laravel-tips",
                   },
                 ],
               },
@@ -142,12 +148,18 @@ export default defineConfig({
                 collapsed: true,
                 items: [
                   {
-                    text: "Conseils",
-                    link: "/fr/laravel/websocket/laravel-tips",
-                  },
-                  {
                     text: "Reverb Websocket sur LAMP",
                     link: "/fr/laravel/websocket/reverb-websocket-on-lamp",
+                  },
+                ],
+              },
+              {
+                text: "Conseils",
+                collapsed: true,
+                items: [
+                  {
+                    text: "Conseils",
+                    link: "/fr/laravel/tips/laravel-tips",
                   },
                 ],
               },

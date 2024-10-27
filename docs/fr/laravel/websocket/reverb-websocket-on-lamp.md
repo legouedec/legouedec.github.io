@@ -4,7 +4,7 @@ outline: deep
 
 # Installation
 
-::: tip Ce tuto fait suite au [déploiement de Laravel sur LAMP](/fr/laravel/deployment/deploy-laravel-on-lamp).
+::: tip Ce tuto requiert [une app laravel qui utilise Reverb](/fr/laravel/deployment/laravel-chat-app-with-reverb). et qui soit [déployée sur lamp](/fr/laravel/deployment/deploy-laravel-on-lamp).
 :::
 ::: details Sommaire
 [[toc]]
