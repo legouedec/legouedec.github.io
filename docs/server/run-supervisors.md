@@ -2,6 +2,8 @@
 outline: deep
 ---
 
+# Laravel Supervisors
+
 ::: tip This tutorial follows the [Laravel Deployment on LAMP](/laravel/deployment/deploy-laravel-on-lamp).  
 :::  
 ::: details Table of Contents  

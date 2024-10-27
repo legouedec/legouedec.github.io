@@ -2,4 +2,4 @@
 outline: deep
 ---
 
-# Laravel Tips
+# Tips
