@@ -98,7 +98,7 @@ sudo mysql
 Set a password for the root user
 
 ```sql
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'password';
 exit
 ```
 
@@ -113,8 +113,8 @@ Create a database and a new MySQL user
 
 ```sql
 CREATE DATABASE example_database;
-CREATE USER 'example_user'@'%' IDENTIFIED BY 'password';
-GRANT ALL ON example_database.* TO 'example_user'@'%';
+CREATE USER 'example_user'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL ON example_database.* TO 'example_user'@'localhost';
 exit
 ```
 
@@ -131,20 +131,20 @@ sudo apt install git
 Clone your site (or upload files via FTP)
 
 ```sh
-git clone https://github.com/laravel/example /var/www/html/
+git clone https://github.com/username/example /var/www/html/
 ```
 
 Set up environment variables
 
 ```sh
-cd /var/www/html/example
-cp .env.example .env
-nano .env
+mv -R /var/www/html/example /var/www/html/example_com
+cp /var/www/html/example_com/.env.example /var/www/html/example_com/.env
+nano /var/www/html/example_com/.env
 ```
 
 ::: code-group
 
-```txt[/var/www/html/example/.env]
+```txt[/var/www/html/example_com/.env]
 APP_NAME=example
 APP_ENV=prod
 APP_DEBUG=false
@@ -180,17 +180,17 @@ sudo php artisan optimize
 Create the VirtualHost
 
 ```sh
-sudo nano /etc/apache2/sites-available/example.conf
+sudo nano /etc/apache2/sites-available/example_com.conf
 ```
 
 ::: code-group
 
-```apache [/etc/apache2/sites-availables/example.conf]
-<VirtualHost *:80>
+```apache [/etc/apache2/sites-availables/example_com.conf]
+<VirtualHost \*:80>
     ServerName example.com
     ServerAlias www.example.com
-    DocumentRoot /var/www/html/example
-    <Directory /var/www/html/example>
+    DocumentRoot /var/www/html/example_com
+    <Directory /var/www/html/example_com>
         AllowOverride all
     </Directory>
     ErrorLog ${APACHE_LOG_DIR}/error.log
@@ -204,7 +204,7 @@ Enable the rewrite mode and activate the site
 ```sh
 sudo a2enmod rewrite
 sudo a2dissite 000-default.conf
-sudo a2ensite example.conf
+sudo a2ensite example_com.conf
 systemctl reload apache2
 ```
 

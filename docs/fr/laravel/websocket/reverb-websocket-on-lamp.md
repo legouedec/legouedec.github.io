@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# Reverb Websocket on LAMP
+# Reverb sur LAMP
 
 <script setup>
 
