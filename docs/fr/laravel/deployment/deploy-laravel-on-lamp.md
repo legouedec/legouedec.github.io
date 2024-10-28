@@ -193,6 +193,7 @@ sudo nano /etc/apache2/sites-available/example_com.conf
     <Directory /var/www/html/example_com>
         AllowOverride all
     </Directory>
+    ProxyPass /app http://0.0.0.0:8080/app upgrade=websocket #si votre application utilise Reverb
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>

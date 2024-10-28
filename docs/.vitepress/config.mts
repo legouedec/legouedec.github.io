@@ -52,6 +52,10 @@ export default defineConfig({
                     text: "Reverb Websocket on LAMP",
                     link: "/laravel/websocket/reverb-websocket-on-lamp",
                   },
+                  {
+                    text: "Application Laravel avec Reverb",
+                    link: "/laravel/websocket/laravel-chat-app-with-reverb",
+                  },
                 ],
               },
               {
@@ -150,6 +154,10 @@ export default defineConfig({
                   {
                     text: "Reverb Websocket sur LAMP",
                     link: "/fr/laravel/websocket/reverb-websocket-on-lamp",
+                  },
+                  {
+                    text: "Application Laravel avec Reverb",
+                    link: "/fr/laravel/websocket/laravel-chat-app-with-reverb",
                   },
                 ],
               },
